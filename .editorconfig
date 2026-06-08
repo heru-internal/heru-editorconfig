@@ -8,6 +8,10 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 charset = utf-8
+max_line_length = 120
+
+[*.{ts,js,tsx,jsx}]
+max_line_length = 80
 
 # Shell scripts
 [*.sh]
@@ -21,6 +25,11 @@ end_of_line = crlf
 # Markdown files
 [*.md]
 trim_trailing_whitespace = false
+
+# Python files
+[*.py]
+indent_size = 4
+max_line_length = 88
 
 # C# files
 [*.cs]
